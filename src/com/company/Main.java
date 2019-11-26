@@ -49,38 +49,48 @@ public class Main {
             price = input.nextDouble();
             System.out.println("Enter a quantity");
             quantity = input.nextInt();
-            System.out.println("the cost of each item:" + price * quantity);
-            System.out.println("Subtotal" + input.nextInt() * price * quantity);
-            boolean t = true;
-            Double Subtotal = input.nextInt() * price * quantity;
-            double salesTax = input.nextInt() + Subtotal;
-            if (t = true) {
-                System.out.println("Calculate the sales tax" + salesTax);
-                boolean taxable = input.hasNextBoolean();
+            System.out.println("the cost of each item:" + price * quantity+ "$ //....please add the number of the items below ?" );
+            System.out.println("Subtotal:" + input.nextInt() * price*quantity);
+            // boolean tax = true;
+         //  double Subtotal = input.nextInt() * price * quantity;
+            //  double salesTax = input.nextInt() + Subtotal;
 
-            } else {
-                System.out.println("no");
-            }
+            double x = 0.0 ;
+            boolean y = true;
+            System.out.println("Do you want to add a state salesTax? :Tax(MD = 0.06,DC = 0.053,VA = 0.075,OS = 0.05)");
+            if(y =true ) {
+              System.out.println("yes");
+               double k = input.nextDouble();
 
-            System.out.println("total amount" + Subtotal + salesTax);
-
-            boolean ans = true;
+             y =true;
+           }
+           else {
+               System.out.println("no");
+           }
+           double StatesalesTax=0.0;
+           double Subtotal = price*quantity*input.nextInt();
+          System.out.println("salesTax"+ Subtotal*StatesalesTax );
+           double SalesTax=0.0;
+           System.out.println("Calculate the total amount?  "+  input.nextInt() * price*quantity + SalesTax );
+                boolean ans = true;
             System.out.println("Do you want to add another item? (Y/N)" + input.equals("Y"));
-            con = input.nextLine();
-            if (con.equalsIgnoreCase("n")) {
-                ans = false;
+           String X = "";
+            if (ans = true){
+               System.out.println (X.equalsIgnoreCase(input.nextLine()));
             }
-
+          else {
+           System.out.println("no");
+            }
         }
 
 
         System.out.println("................print...........");
 
-       String recipt;
-        for (Main C: recipt ) {
-            System.out.println(C);
+    //   String recipt;
+    //   for (Main C: recipt ) {
+     //       System.out.println(C);
         }
-    } //
+  //  } //
   //  double costofEachItem = 0.0;
   //
   // public static double cost(Object price, Object quantity){
@@ -90,9 +100,9 @@ public class Main {
   //  }
 
 
-    //  for(String x:userResponse)
-    //      System.out.println(x);
-//public static double
+     //for(String x:userResponse)
+     //    System.out.println(x);
+
     private void SetitemName() {
     }
     private void Settaxable() {
